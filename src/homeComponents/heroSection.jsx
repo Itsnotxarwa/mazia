@@ -23,9 +23,7 @@ export default function HeroSection() {
                                 <div className="mt-16 flex gap-4 items-center justify-center">
 
                                 <a
-                                href="https://calendly.com/marwakouachkhia/demo-mazia-agent-ia-pour-les-appels"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="/demo"
                                 className="relative overflow-hidden flex items-center justify-center 
                                 gap-3 text-sm font-medium  whitespace-nowrap rounded-[30px] cursor-pointer
                                 px-8 py-2 h-11  bg-[#032CA6] text-white 
