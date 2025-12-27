@@ -33,7 +33,7 @@ export default function Footer() {
                         </div>             
                     </div>
 
-                    <div className="flex flex-1 justify-center gap-16 w-full">
+                    <div className="grid grid-cols-2 md:grid-cols-3 space-y-4 md:justify-items-center w-full">
 
                     <div className="space-y-4">
                         <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Menu</h3>
@@ -103,7 +103,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    </div>
                     <div className="space-y-4">
                         <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Contact</h3>
                         <ul className="space-y-3">
@@ -129,6 +128,9 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
+
+                    </div>
+                    
                 </div>
             </div>
         </footer>
