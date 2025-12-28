@@ -28,7 +28,7 @@ export default function Tarifs() {
                 </div>
                 
                 <Fade triggerOnce direction='up' duration={1000} delay={800}>
-                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-3 mt-8 gap-8 md:mx-16">
+                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 md:mx-16">
                     {TarifsData.map((item,i) => (
                         <div
                         key={i}
