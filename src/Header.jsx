@@ -92,24 +92,16 @@ export default function Header() {
                 bg-[#e2e9fe]/90 backdrop-blur-sm px-4 pt-24 
                 pb-4 text-lg font-medium">
                     <div className="flex flex-col items-center gap-2 pb-4 w-full">
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Accueil</a>
-                    </div>
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Fonctionnalités</a>
-                    </div>
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Cas d'usage</a>
-                    </div>
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Tarifs</a>
-                    </div>
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Il nous ont fait confiane</a>
-                    </div>
-                    <div className="submenu-item">
-                        <a href="#" className="submenu-link">Contact</a>
-                    </div>
+                        {data.map((link, index) => (
+                            <div
+                            key={index} 
+                            className="submenu-item">
+                                <a href={link.href} className="submenu-link">
+                                    {link.link}
+                                </a>
+                            </div>
+                        ))}
+                    
                     </div>
 
                     <div className="flex items-center">
