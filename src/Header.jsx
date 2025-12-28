@@ -3,6 +3,52 @@ import { ArrowUpRight, ArrowRight, ChevronDown, X, AlignJustify  } from "lucide-
 import mazLogo from "./assets/image.png"
 export default function Header() {
 
+    const data = [
+        {   
+            link: "Accueil",
+            list: [
+                "Pourquoi Mazia ?",
+                "Fonctionnalités clés de Mazia",
+                "Cas d’usage",
+                "Il nous ont fait confiance",
+                "Tarifs et offres",
+                "Questions fréquentes"
+            ],
+        },
+        {   
+            link: "Fonctionnalités",
+            list: [
+                "Appels entrants",
+                "Appels sortants",
+                "Transcriptions et rapports",
+                "Personnalisation",
+            ],
+            Icon: ChevronDown
+        },
+        {   
+            link: "Cas d’usage",
+            list: [
+                "Prise de rendez-vous",
+                "Relance de prospects",
+                "Support client simple",
+                "Notifications et rappels",
+                "Suivi de dossiers et commandes"
+            ],
+        },
+        {   
+            link: "Tarifs",
+        },
+        {   
+            link: "Il nous ont fait confiance",
+            list: [
+                "Témoignages clients",
+            ],
+        },
+        {   
+            link: "Tarifs",
+        },
+    ]
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     return(
@@ -15,47 +61,44 @@ export default function Header() {
 
                     <div className="hidden md:flex">
                         <nav>
-                            <ul className="flex list-none items-center justify-center gap-6">
-                                <li className="">
-                                    <a href="" className="relative flex items-center justify-center gap-1 
-                                    leading-6 font-medium text-sm">
-                                        <span>Accueil</span>
-                                        <ChevronDown size={24} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" className="relative flex items-center justify-center gap-1 
-                                    leading-6 font-medium text-sm">
-                                        <span>Fonctionnalités</span>
-                                        <ChevronDown size={24} />
-                                    </a>
-                                </li>
-                                <li className="">
-                                    <a href="" className="relative flex items-center justify-center gap-1 
-                                    leading-6 font-medium text-sm">
-                                        <span>Cas d'usage</span>
-                                        <ChevronDown size={24} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" className="
-                                    leading-6 font-medium text-sm">
-                                        <span>Tarifs</span>
-                                    </a>
-                                </li>
-                                <li className="">
-                                    <a href="" className="relative flex items-center justify-center gap-1 
-                                    leading-6 font-medium text-sm">
-                                        <span>Il nous ont fait confiane</span>
-                                        <ChevronDown size={24} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" className="
-                                    leading-6 font-medium text-sm">
-                                        <span>Contact</span>
-                                    </a>
-                                </li>
+                            <ul className="flex list-none items-center justify-center">
+                                {data.map((item,i) => (
+                                    <li key={i} className="group">
+                                        <a 
+                                        href="" 
+                                        className="group relative px-4 py-2 flex items-center justify-center gap-1 
+                                        leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-gray-200"
+                                        >
+                                            <span>
+                                                {item.link}
+                                            </span>
+                                            {item.list && (
+                                                <ChevronDown
+                                                size={20}
+                                                className="transition-transform duration-300 group-hover:rotate-180"
+                                                />
+                                            )}
+                                        </a>
+                                        {item.list && (
+                                        <div className="flex flex-col absolute top-full rounded-2xl overflow-hidden
+                                        border border-gray-200 bg-white shadow-xl z-80 opacity-0 group-hover:opacity-100
+                                        transition duration-300">
+                                            {item.list.map((sub,index) =>(
+                                            <div
+                                            key={index} 
+                                            className="w-full transition-all duration-300">
+                                                <a 
+                                                href="" 
+                                                className="block px-6 py-3 transition-colors duration-300 
+                                                hover:bg-gray-200">
+                                                    {sub}
+                                                </a>
+                                            </div>
+                                            ))}
+                                        </div>
+                                        )}
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                     </div>
