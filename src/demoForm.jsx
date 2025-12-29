@@ -201,7 +201,7 @@ export default function DemoForm() {
 
                 <input 
                     type="tel" 
-                    placeholder="+1 (555) 000-000"
+                    placeholder="6 7581579"
                     className="h-10 px-3 py-2 rounded-md w-full 
                     border border-gray-300 pl-18 bg-white placeholder:text-gray-500 text-sm text-gray-900
                     focus:border-[#032ca6] focus-visible:outline-none"
