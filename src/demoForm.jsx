@@ -102,7 +102,7 @@ export default function DemoForm() {
                 let message = "Service indisponible. Veuillez réessayer plus tard.";
 
                 if (res.status === 400) {
-                    message = "Cet email existe déjà.";
+                    message = "Ce contact existe déjà.";
                 }
 
                 if (res.status === 500) {
