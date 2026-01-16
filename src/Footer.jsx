@@ -113,7 +113,7 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
-                                    mail@mazia.fr
+                                    contact@mazia.ai
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">
@@ -123,7 +123,7 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
-                                    +33 *******
+                                    +33 423330751
                                 </a>
                             </li>
                         </ul>

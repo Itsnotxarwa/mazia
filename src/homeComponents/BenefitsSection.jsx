@@ -21,7 +21,7 @@ export default function BenefitsSection() {
                     <div className="flex justify-center">
                     <Fade triggerOnce direction='up' duration={1000} delay={600}>
                     <p className="text-lg max-w-xl mb-6 text-center text-blue-950 px-4">
-                        Mazia automatize vos intercations téléphoniques pour vous faire gagner du temps, améliorer l'efficacité de vos équipes et garantir une expérience client constante et professionelle.
+                        Mazia automatize vos intéractions téléphoniques pour vous faire gagner du temps, améliorer l'efficacité de vos équipes et garantir une expérience client constante et professionelle.
                     </p>
                     </Fade>
                     </div>

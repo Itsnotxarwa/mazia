@@ -99,7 +99,17 @@ export default function DemoForm() {
             })
             
             if (!res.ok) {
-                setServerError("Service indisponible. Veuillez réessayer plus tard.");
+                let message = "Service indisponible. Veuillez réessayer plus tard.";
+
+                if (res.status === 400) {
+                    message = "Cet email existe déjà.";
+                }
+
+                if (res.status === 500) {
+                    message = "Un problème technique est survenu. Notre équipe travaille dessus.";
+                }
+
+                setServerError(message);
                 resetForm();
                 setTimeout(() => setServerError(""),5000);
                 setLoading(false);
@@ -115,7 +125,6 @@ export default function DemoForm() {
         }catch (error) {
             console.error(error);
             setServerError("Service indisponible. Veuillez réessayer plus tard.");
-            resetForm();
             setLoading(false);
             setTimeout(() => setServerError(""),5000);
         }
@@ -192,7 +201,7 @@ export default function DemoForm() {
                 items-center justify-between"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
-                    <span>{selectedCountry ? `+${selectedCountry.code}` : "+33"}</span>
+                    <span>{selectedCountry ? `+${selectedCountry.code}` : " +33"}</span>
                     <span>
                         <ChevronDown size={12} />
                     </span>
@@ -201,7 +210,7 @@ export default function DemoForm() {
 
                 <input 
                     type="tel" 
-                    placeholder="6 7581579"
+                    placeholder="423330751"
                     className="h-10 px-3 py-2 rounded-md w-full 
                     border border-gray-300 pl-18 bg-white placeholder:text-gray-500 text-sm text-gray-900
                     focus:border-[#032ca6] focus-visible:outline-none"
