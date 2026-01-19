@@ -50,7 +50,7 @@ export default function Header() {
                                         <a 
                                         href={item.href} 
                                         className="group relative px-4 py-2 flex items-center justify-center gap-1 
-                                        leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-gray-200"
+                                        leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-[#032ca6]/10"
                                         >
                                             <span>
                                                 {item.link}
