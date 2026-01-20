@@ -75,6 +75,7 @@ export default function Footer() {
                                     Cas d'usage
                                 </a>
                             </li>
+                            
                             <li>
                                 <a 
                                 href="/#tarifs"
@@ -135,7 +136,7 @@ export default function Footer() {
                                 </div>
                                 <a 
                                 href=""
-                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-blue-800 text-lg leading-relaxed tracking-tight transition-colors hover:underline">
                                     contact@mazia.ai
                                 </a>
                             </li>
@@ -145,7 +146,7 @@ export default function Footer() {
                                 </div>
                                 <a 
                                 href=""
-                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:underline">
                                     +33 423330751
                                 </a>
                             </li>

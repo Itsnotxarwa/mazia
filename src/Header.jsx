@@ -12,6 +12,7 @@ export default function Header() {
         {   
             link: "Fonctionnalités",
             href: "/#fonctionnalities",
+            title: "Fonctionnalités des agents Mazia IA | Automatisation appels & support client"
         },
         {   
             link: "Cas d’usage",
@@ -23,11 +24,13 @@ export default function Header() {
         },
         {   
             link: "Tarifs",
-            href: "/#tarifs"
+            href: "/#tarifs",
+            title: "Tarifs agents Mazia | Zéro frais de mise en place"
         },
         {   
             link: "Contact",
-            href: "#"
+            href: "#",
+            title: "Contactez Mazia | Testez votre agent IA personnalisé"
         },
     ]
 
@@ -50,6 +53,7 @@ export default function Header() {
                                     <li key={i} className="group">
                                         <a 
                                         href={item.href} 
+                                        title={item.title}
                                         className="group relative px-4 py-2 flex items-center justify-center gap-1 
                                         leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-[#032ca6]/10"
                                         >

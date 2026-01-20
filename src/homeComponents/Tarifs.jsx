@@ -51,7 +51,7 @@ export default function Tarifs() {
                             <div className="mt-12 flex flex-col justify-center items-center border-t border-[#032ca6]">
                                 <div className="mt-4 flex flex-col justify-center items-center space-y-2">
                                     <h3 className="underline text-sm">Fonctionnalités:</h3>
-                                    <ul className="list-disc list-inside text-center">
+                                    <ul className=" text-center">
                                         {item.fonctionnalities.map((f, index) => (
                                             <li key={index}>
                                                 {f}
@@ -62,9 +62,12 @@ export default function Tarifs() {
                             </div>
 
                             <div className="mt-12 flex justify-center">
-                                <button className="bg-[#032ca6] flex justify-center text-nowrap w-full py-3 px-5 text-white rounded-lg font-medium">
+                                <a 
+                                href={item.href}
+                                className="bg-[#032ca6] flex justify-center text-nowrap w-full py-3 px-5 text-white 
+                                rounded-lg font-medium transition-transform duration-300 hover:scale-105">
                                     Commencez votre essai gratuit
-                                </button>
+                                </a>
                             </div>
                             </div>
                         </div>

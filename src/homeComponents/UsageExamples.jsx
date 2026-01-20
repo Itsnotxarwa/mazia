@@ -42,9 +42,12 @@ export default function UsageExamples() {
                                                 {item.title}
                                                 </h3>
                                                 <p className="text-base text-left max-w-sm">{item.description}</p>
-                                                <button className="bg-[#032CA6] px-8 text-sm py-2 rounded-xs text-white">
-                                                    Voir Mazia en action
-                                                </button>
+                                                <a 
+                                                href="/demo"
+                                                className="bg-[#032CA6] px-8 text-sm py-2 rounded-xs text-white transition-all
+                                                duration-300 hover:scale-105 hover:bg-[#032CA6]/85">
+                                                    Discutons en maintenant
+                                                </a>
                                             </div>
 
                                             <div className="flex justify-center">
