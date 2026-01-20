@@ -27,6 +27,7 @@ export default function Header() {
         },
         {   
             link: "Contact",
+            href: "#"
         },
     ]
 
