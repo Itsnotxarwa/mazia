@@ -70,7 +70,7 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
-                                    Il nous ont fait confiance
+                                    Ils nous ont fait confiance
                                 </a>
                             </li>
                             <li>
@@ -97,7 +97,14 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
-                                    Publiques de confidentialité
+                                    Politiques de confidentialité
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                href=""
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    Conditions d'utilisation
                                 </a>
                             </li>
                         </ul>
@@ -124,6 +131,12 @@ export default function Footer() {
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     +33 423330751
+                                </a>
+                            </li>
+                            <li className="flex justify-end">
+                                <a href=""
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    Devenir Partenaire
                                 </a>
                             </li>
                         </ul>
