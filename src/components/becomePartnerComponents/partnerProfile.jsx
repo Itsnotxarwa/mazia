@@ -2,7 +2,6 @@ import ImageOne from "../assets/image1.jpg";
 import ImageTwo from "../assets/image2.jpg";
 import ShakeHands from "../assets/shakehands.jpg";
 
-export default function PartnerProfile() {
     const profils = [
         {
             image: ImageOne,
@@ -20,6 +19,9 @@ export default function PartnerProfile() {
             description: "offrant des services B2B et désireux de proposer une valeur ajoutée innovante à leurs clients existants. "
         }
     ]
+
+export default function PartnerProfile() {
+
     return(
         <section className="min-h-screen py-16">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
@@ -27,7 +29,7 @@ export default function PartnerProfile() {
                     Cette opportunité s’adresse à différents profils de partenaires : 
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14 h-60">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
                     {profils.map((item,i) => (
                         <div
                         key={i}

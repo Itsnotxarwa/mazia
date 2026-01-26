@@ -37,10 +37,10 @@ export default function BenefitsForPartners() {
                             hover:shadow-xl transition-shadow duration-300">
                                 <span className=" w-4 h-4 rounded-full bg-[#032CA6] shrink-0" />
                                 <div className="flex flex-col gap-2">
-                                    <h3 className="text-xl md:text-2xl font-semibold text-black">
+                                    <h3 className="text-2xl font-bold text-black">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm md:text-lg text-black/70 leading-relaxed">
+                                    <p className="text-lg text-black/70 leading-relaxed">
                                         {item.description}
                                     </p>
                                 </div>
