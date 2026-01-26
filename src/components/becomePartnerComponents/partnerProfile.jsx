@@ -33,7 +33,7 @@ export default function PartnerProfile() {
                         key={i}
                         className="flex flex-col items-center justify-center p-8 bg-white shadow-lg rounded-2xl
                         hover:shadow-2xl transition-all duration-300 relative group border border-[#032ca6]/5">
-                            <div className="absolute inset-0 bg-[#032ca6]/5 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100"></div>
+                            <div className="absolute inset-0 bg-linear-to-br from-[#032ca6]/5 to-white backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100"></div>
                             <div className="relative flex justify-center items-center z-10">
                                 <div className="w-20 h-20 bg-[#032ca6]/10 rounded-full absolute z-0 "></div>
                                 <img src={item.image} className="w-40 relative z-10" />
