@@ -1,3 +1,5 @@
+import { Fade, Slide } from "react-awesome-reveal"
+
 export default function BenefitsForPartners() {
     const benefits = [
         {
@@ -20,6 +22,7 @@ export default function BenefitsForPartners() {
     return(
         <section className="py-24 min-h-screen">
             <div className=" mx-auto px-4 md:px-6 lg:px-8">
+                <Slide triggerOnce direction="left" duration={1000}>
                 <div className="bg-[#032ca6]/10 rounded-4xl p-8 grid grid-cols-1 lg:grid-cols-2 lg:w-7xl">
                     <div className="flex flex-col justify-center lg:max-w-2xl mx-auto px-6 gap-4 mb-4">
                         <h3 className="text-4xl lg:text-6xl font-bold tracking-tight text-[#032ca6] mb-4">
@@ -31,6 +34,7 @@ export default function BenefitsForPartners() {
                     </div>
                     <div className="space-y-6 lg:-mr-48">
                         {benefits.map((item,i) => (
+                            <Fade triggerOnce direction="left" duration={800}>
                             <div
                             key={i}
                             className="p-8 bg-white rounded-2xl flex items-center justify-center gap-6 shadow-lg
@@ -45,9 +49,11 @@ export default function BenefitsForPartners() {
                                     </p>
                                 </div>
                             </div>
+                            </Fade>
                         ))}
                     </div>
                 </div>
+                </Slide>
             </div>
         </section>
     )

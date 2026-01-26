@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Fade } from "react-awesome-reveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,17 +53,22 @@ export default function HowItWorks() {
         <section className="min-h-screen py-24 relative z-20">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-4">
                 <div className="flex justify-center items-center">
+                    <Fade triggerOnce direction="up" duration={800}>
                     <h3 className="text-lg py-1 px-4 border border-blue-950 text-blue-950 rounded-full tracking-tighter mb-4">
                         Comment fonctionne l’agent Mazia ?
                     </h3>
+                    </Fade>
                 </div>
+                <Fade triggerOnce direction="up" duration={800}>
                 <p className="text-4xl max-w-5xl mx-auto md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
                     L’agent Mazia n’est pas un simple robot : c’est un assistant intelligent qui agit comme un commercial ou une secrétaire 24/7.
                 </p>
+                </Fade>
                 <div ref={containerRef} className="relative">
                     <div className="absolute hidden md:block left-10 top-5 h-180 w-0.5 bg-blue-900 origin-top" ref={lineRef}></div>
                     <div className="space-y-12">
                         {steps.map((step,i) => (
+                            <Fade direction="up" triggerOnce cascade={false} duration={800} >
                             <div
                             key={i}
                             className="flex items-start gap-4 md:gap-8">
@@ -82,6 +88,7 @@ export default function HowItWorks() {
                                     </p>
                                 </div>
                             </div>
+                        </Fade>
                         ))}
                     </div>
                 </div>
