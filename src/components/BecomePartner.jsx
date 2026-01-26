@@ -1,6 +1,7 @@
 import Header from "../Header";
 import BenefitsForPartners from "./becomePartnerComponents/benefitsForPartners";
 import Hero from "./becomePartnerComponents/hero";
+import PartnerProfile from "./becomePartnerComponents/partnerProfile";
 
 export default function BecomePartner() {
     return(
@@ -8,6 +9,7 @@ export default function BecomePartner() {
             <Header />
             <Hero />
             <BenefitsForPartners />
+            <PartnerProfile />
         </div>
     )
 }
