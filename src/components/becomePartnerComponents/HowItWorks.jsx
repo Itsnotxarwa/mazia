@@ -71,16 +71,16 @@ export default function HowItWorks() {
                             <Fade direction="up" triggerOnce cascade={false} duration={800} >
                             <div
                             key={i}
-                            className="flex items-start gap-4 md:gap-8">
+                            className="flex items-start gap-2 md:gap-8">
                                 <div className="shrink-0">
-                                    <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-blue-900 text-2xl shadow-lg flex justify-center items-center font-bold text-white">
+                                    <div className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-blue-900 text-xl md:text-2xl shadow-lg flex justify-center items-center font-bold text-white">
                                         {step.id}
                                     </div>
                                 </div>
                                 
-                                <div className="flex flex-col p-8 bg-white shadow-xl transition-shadow duration-300 rounded-2xl gap-4 border border-[#032ca6]/5
+                                <div className="flex flex-col p-6 md:p-8 bg-white shadow-xl transition-shadow duration-300 rounded-2xl gap-4 border border-[#032ca6]/5
                                 hover:shadow-2xl">
-                                    <h3 className="text-4xl font-bold mb-2">
+                                    <h3 className="text-3xl md:text-4xl font-bold mb-2">
                                         {step.title}
                                     </h3>
                                     <p className="text-black/70 text-lg md:text-xl">
