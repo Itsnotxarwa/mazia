@@ -35,7 +35,7 @@ export default function UseCases() {
     <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-4">
         <Fade triggerOnce direction="up" duration={800}>
         <div className="flex items-center justify-center mb-4">
-            <h3 className="py-1 px-4 border border-blue-950 tracking-tighter text-blue-950 rounded-full">
+            <h3 className="py-1 px-4 border border-blue-950 text-lg tracking-tighter text-blue-950 rounded-full">
                 Cas d’usage pour vos clients
             </h3>
         </div>
@@ -49,7 +49,7 @@ export default function UseCases() {
           {useCases.map((item, i) => {
             const Icon = item.icon;
             return(
-            <Fade key={i} direction="up" triggerOnce cascade={false} duration={700}>
+            <Fade key={i} direction="up" triggerOnce cascade={false} duration={800}>
               <div className="p-2 space-y-6 text-center">
                 <div className="flex justify-center">
                 <Icon className="text-blue-900" size={34} />
@@ -63,6 +63,7 @@ export default function UseCases() {
           )})}
         </div>
       </div>
+      <Fade triggerOnce direction="left" duration={400} delay={200}>
       <div className="mt-12 py-8 w-full bg-[#032ca6]/10 flex items-center justify-center">
           <p className="text-xl text-center leading-relaxed px-4">
               <span className="text-blue-900 font-bold">
@@ -75,6 +76,7 @@ export default function UseCases() {
               </span>
           </p>
       </div>
+      </Fade>
     </section>
   );
 }
