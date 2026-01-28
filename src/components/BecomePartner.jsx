@@ -8,6 +8,8 @@ import FinancialBenefits from "./becomePartnerComponents/FinancialBenefits";
 import Footer from "../Footer"
 import ProcessusDePartenariat from "./becomePartnerComponents/processusDePartenariat ";
 import WhyMazia from "./becomePartnerComponents/whyMazia";
+import CallToAction from "./becomePartnerComponents/CallToAction";
+import Testimonials from "./becomePartnerComponents/testimonials";
 
 export default function BecomePartner() {
     return(
@@ -21,6 +23,8 @@ export default function BecomePartner() {
             <FinancialBenefits />
             <ProcessusDePartenariat />
             <WhyMazia />
+            <Testimonials />
+            <CallToAction />
             <Footer />
         </div>
     )
