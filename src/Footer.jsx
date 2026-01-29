@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Handshake } from "lucide-react";
 import mazLogo from "./assets/image.png";
 
 export default function Footer() {
@@ -152,7 +152,10 @@ export default function Footer() {
                                     +33 423330751
                                 </a>
                             </li>
-                            <li className="flex justify-end">
+                            <li className="flex items-center gap-3">
+                                <div className="flex justify-center p-2 border border-gray-500 bg-gray-50 rounded-lg text-black">
+                                <Handshake size={18} />
+                                </div>
                                 <a href="/devenir-partenaire"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Devenir Partenaire
