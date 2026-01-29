@@ -107,21 +107,21 @@ export default function Footer() {
                         <ul className="space-y-3">
                             <li>
                                 <a 
-                                href="https://docs.google.com/document/d/14bmWWda6kSxWh9AaNUm9WglXvw0KLMXDmfXwYGpiwwo/edit?usp=drive_link"
+                                href="/mentions-légales"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Mentions légales
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href="https://docs.google.com/document/d/14bmWWda6kSxWh9AaNUm9WglXvw0KLMXDmfXwYGpiwwo/edit?usp=drive_link"
+                                href="/Politiques-de-confidentialité"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Politiques de confidentialité
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href="https://docs.google.com/document/d/14bmWWda6kSxWh9AaNUm9WglXvw0KLMXDmfXwYGpiwwo/edit?usp=drive_link"
+                                href="/Conditions-d-utilisation"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Conditions d'utilisation
                                 </a>
