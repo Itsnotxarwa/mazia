@@ -85,6 +85,13 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a 
+                                href="/#faq"
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a 
                                 href="/#testimonials"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Ils nous ont fait confiance

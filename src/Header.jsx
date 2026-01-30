@@ -28,6 +28,10 @@ export default function Header() {
             title: "Tarifs agents Mazia | Zéro frais de mise en place"
         },
         {   
+            link: "FAQ",
+            href: "/#faq",
+        },
+        {   
             link: "Contact",
             href: "/contact",
             title: "Contactez Mazia | Testez votre agent IA personnalisé",

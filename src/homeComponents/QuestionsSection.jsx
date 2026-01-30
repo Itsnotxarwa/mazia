@@ -16,7 +16,7 @@ export default function QuestionsSection() {
     }
 
     return(
-        <section id="questions" className="relative py-24 px-4 min-h-screen">
+        <section id="faq" className="relative py-24 px-4 min-h-screen">
 
             <div className="relative max-w-5xl mx-auto ">
                 <div className="text-center mb-14">
